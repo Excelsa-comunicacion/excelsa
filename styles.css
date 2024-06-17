@@ -1,0 +1,573 @@
+/* Estilo del encabezado */
+/* Estilo del encabezado */
+.navbar {
+    background-color: rgb(255, 162, 41); /* Color de fondo del encabezado */
+    color: #FFF; /* Color del texto */
+    padding: 20px 0; /* Espacio interno del encabezado */
+    text-align: center; /* Centrar el contenido */
+    
+  }
+  
+  .nav-brand a {
+    font-size: 24px; /* Tamaño del texto del logotipo */
+    color: #FFF; /* Color del texto del logotipo */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+    
+  }
+  
+  .nav-links {
+    margin-top: 4px; /* Espacio entre el logotipo y los enlaces */
+    
+  }
+  
+  .nav-links a {
+    color: #FFF; /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px 15px; /* Espacio interno de los enlaces */
+    margin: 20 10px; /* Espacio entre los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    
+  }
+  
+  .nav-links a:hover {
+    background-color: #FE7A2E; /* Color de fondo al pasar el ratón */
+  }
+
+  .navbar {
+    display: flex; /* Utilizamos flexbox para controlar la alineación de los elementos */
+    justify-content: space-between; /* Distribuye el espacio disponible entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    
+}
+
+.nav-brand {
+    order: 1; /* Cambia el orden del elemento para que aparezca primero */
+}
+
+.nav-links {
+    order: 2; /* Cambia el orden del elemento */
+}
+
+.nav-brand img {
+    max-width: 200px; /* ajusta el ancho máximo de la imagen según lo necesites */
+    height: auto; /* permite que la altura se ajuste automáticamente según el ancho */
+}
+
+
+body {
+    font-size: 18px; /* Tamaño de fuente */
+    font-family: 'poppins';
+    background-image: url('img/Excelsa Comunicación.png');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen en su posición mientras se desplaza */
+   
+    
+}
+
+/*estilos a los titulos*/
+
+h2 {
+    font-size: 40px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    font-style: italic; /* Estilo cursiva */
+    font-family: 'Sirenia';
+    color: #333; /* Color de texto */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espacio debajo de cada título */
+    
+}
+
+/*estilos a los Servicios*/
+
+.services-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: poppins; 
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.services-heading {
+    font-size: 2.3em;
+    margin-bottom: 40px;
+    color: rgba;
+    position: relative;
+    display: inline-block;
+    
+ 
+}
+
+.services-heading::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: rgb(255, 162, 41);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.services-table {
+    width: 100%;
+    margin: 20px 0;
+ 
+}
+
+.services-table th, .services-table td {
+    border: 1px solid #FF8B79;
+    padding: 12px;
+    align-items: center;
+    border-radius: 50px;
+    border-image: linear-gradient(to right, #405DE6, #833AB4, #C13584, #FD1D1D, #F56040, #FCAF45, #FFDC80);
+}
+
+.services-table th {
+    background-color: rgb(255, 162, 41);;
+    color: #ffffff;
+    
+}
+
+.services-table tr:nth-child(even) {
+    background-color: #ffe7e3;
+    
+}
+
+.services-table tr:hover {
+    background-color:#FF8B79;
+}
+
+.services-table td {
+    font-size: 1em;
+    
+}
+
+
+
+
+
+
+
+/*estilos a los packs*/
+.packs-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.packs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+.pack {
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border-image: linear-gradient(to right, #405DE6, #833AB4, #C13584, #FD1D1D, #F56040, #FCAF45, #FFDC80);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    text-align: center;
+    margin: 0 10px;
+    flex: 0 0 auto;
+    opacity: 0.5;
+    transform: scale(0.8);
+    order: 1; /* Initial order */
+}
+
+.pack.active {
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.pack h1 {
+    margin-bottom: 20px;
+}
+
+.pack ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.pack li {
+    margin-bottom: 5px;
+}
+
+.pack .btn {
+    background-color: #FF634A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pack .btn:hover {
+    background-color: #FE7A2E;
+    transform: scale(1.05);
+}
+
+.animated-list li,
+.animated-list button {
+    transition: background-color 0.3s ease;
+}
+
+.animated-list li:hover,
+.animated-list button:hover {
+    background-color: #f5f5f5;
+}
+
+.animated-list li:nth-last-child(-n+2) {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.4;
+    color: #333;
+    text-align: left;
+}
+
+em {
+    font-style: italic;
+}
+
+.carousel-btn {
+    background-color: #FF634A;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: #FE7A2E;
+    transform: scale(1.1);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+
+
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gif-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+    background-color: #FFFFFF; /* Color de fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    color: #333333; /* Color de texto */
+    border: 5px solid;
+    border-image: linear-gradient(to right, #405DE6, #833AB4, #C13584, #FD1D1D, #F56040, #FCAF45, #FFDC80); /* Degradado inspirado en Instagram */
+    border-image-slice: 1; /* Para asegurar que el degradado se aplique a todo el borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box p {
+    font-size: 18px; /* Tamaño de fuente */
+    font-style: italic; /* Estilo cursiva */
+    line-height: 1.4; /* Espaciado entre líneas */
+    text-align: center; /* Alineación del texto */
+}
+
+.info-box em {
+    font-style: italic; /* Estilo cursiva */
+}
+
+.info-box h5 {
+    font-size: 16px; /* Tamaño de fuente para el subtítulo */
+    font-weight: bold; /* Texto en negrita */
+    font-style: italic; /* Estilo cursiva */
+    margin-top: 20px; /* Espacio superior al subtítulo */
+}
+
+
+
+
+h5 {
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    font-style: italic; /* Estilo cursiva */
+    color: #333; /* Color de texto */
+    text-align: center;
+}
+
+/*estilo para "nosotras"*/
+#nosotras {
+    text-align: center; /* Alinear el contenido al centro */
+    padding: 50px 0; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo */
+}
+
+#nosotras h2 {
+    font-size: 32px; /* Tamaño del título */
+    color: #333; /* Color del texto */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.team-container {
+    display: flex; /* Mostrar los miembros del equipo en línea */
+    justify-content: center; /* Centrar horizontalmente los miembros del equipo */
+    gap: 40px; /* Espacio entre los miembros del equipo */
+    flex-wrap: wrap; /* Envolver en varios líneas si es necesario */
+}
+
+.team-member {
+    width: 300px; /* Ancho fijo para cada miembro del equipo */
+    background-color: #fff; /* Color de fondo del contenedor */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: left; /* Alinear el texto a la izquierda dentro del contenedor */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.team-member:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al hacer hover */
+}
+
+.team-member img {
+    width: 100%; /* Ajustar la imagen al ancho del contenedor */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+.team-member-info h3 {
+    font-size: 24px; /* Tamaño del título del miembro */
+    color: #333; /* Color del texto */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.team-member-info p {
+    font-size: 16px; /* Tamaño del texto */
+    color: #666; /* Color del texto secundario */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+
+
+
+
+/* Estilo del botón de contacto */
+.team-member-info button {
+    padding: 10px 20px;
+    background-color: #FF634A; /* Color de fondo del botón */
+    color: #FFF; /* Color de texto del botón */
+    border: none;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el ratón sobre el botón */
+.team-member-info button:hover {
+    background-color: #FE7A2E;
+}
+
+
+.contact-container {
+    display: flex;
+    gap: 15px; /* Espacio entre el mapa y el formulario */
+}
+
+.map-container, .contact-form {
+    width: 100%; /* Divide el ancho en dos para ambos elementos */
+}
+
+.map-container {
+    float: left; /* Alinea el mapa a la izquierda */
+    padding: 20px;
+    background-color: #f3ddb6; /*AJUSTA EL COLOR DE FONDO DEL MAPS,*/
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container h2 {
+    margin-bottom: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.contact-form {
+    float: right; /* Alinea el formulario a la derecha */
+    padding: 20px;
+    background-color: #f3ddb6; /*AJUSTA EL COLOR DE FONDO DEL FORMULARIO CONTACTO,*/
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form div {
+    margin-bottom: 15px;
+}
+
+.contact-form form label {
+    font-weight: bold;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f1d7d7;
+    border-radius: 5px;
+}
+
+.contact-form form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #08a50b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form form button[type="submit"]:hover {
+    background-color: #ffbc14;
+}
+
+.social-title {
+    text-align: left; /* Alineación a la izquierda */
+    font-size: 20px; /* Tamaño de fuente ajustado */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 10px; /* Espacio inferior */
+  }
+  
+  .social-icons {
+    display: flex; /* Mostrar los íconos en línea */
+  }
+  
+  .social-icons a {
+    margin-right: 10px; /* Espacio entre los íconos */
+  }
+
+.footer {
+
+    background-color: #f9a641; /* Color de fondo del encabezado */
+    
+    padding: 20px 0; /* Espacio interno del encabezado */
+    text-align: center; /* Centrar el contenido */
+}
+
+.footer p {
+    color: #FFF; /* Color del texto */
+  }
+
+
+
+a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin: 40px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+
+p {
+    font-size: 10;
+    line-height: 1.6;
+    text-align: center; /* Centrar el texto */
+}
+
+/*Falta vincular tiktok, esta en el html, peo no aparece el icono de la pagia, ver. 
+dividir lo que es html y css- 
+agregar mapa en la pagina.
