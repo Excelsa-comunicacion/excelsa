@@ -59,7 +59,7 @@
 body {
     font-size: 18px; /* Tamaño de fuente */
     font-family: 'poppins';
-    background-image: url('Excelsa Comunicación.png');
+    background-image: url('.');
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
     background-attachment: fixed; /* Fija la imagen en su posición mientras se desplaza */
