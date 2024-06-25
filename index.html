@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Excelsa Comunicación</title>
+    <link rel="icon" type="image/png" href="img\LOGO E ISOLOGO-02.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-VMPc0P7hyN3geIrlRo0Q+XWt+RHW3cqmWKvktH80ZNH6gcroO6WXau0dCwT5J8zj0yeiymvjl2ZJwTzajwM9CA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDogEULiAfhsPHgdJyRZspzOMy0jqIBB44&callback=initMap" async defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+<body>
+
+<!-- Links (sit on top) -->
+<nav class="navbar">
+  <div class="nav-brand">
+    <a href="#"><img src="img\LOGO E ISOLOGO - BLANCO - FONDO NARANJA.png" alt="Logo"></a>
+  </div>
+  <div class="nav-links">
+    <a href="#inicio">Inicio</a>
+    <a href="#packs">Packs</a>
+    <a href="#nosotras">Nosotras</a>
+    <a href="#contacto">Contacto</a>
+</div>
+</nav>
+<!-- Content NO LE QUITE EL CSS-->
+<div div id="inicio" class="w3-content" style="max-width:1700px;margin-top:10px;margin-bottom:00px">
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="img\COHETE.png" style="width:100%">
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="img\banner 2 .png" style="width:100%">
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="img\Sin título-3.png" style="width:100%">
+    </div>
+<!-- Content NO LE QUITE EL CSS-->
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-pink w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+  <!-- Content NO LE QUITE EL CSS-->
+<br>
+  <!-- Grid -->
+  <div id="services" class="services-section">
+    <div class="services-container" data-aos="fade-up">
+      <h2 class="services-heading">Nuestros Servicios</h2>
+        <table class="services-table">
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                    <th>Duración</th>
+                    <th>Regalo</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Asesorías.</strong></td>
+                <td><em>Consultoría personalizada para tu marca.</em></td>
+                <td>Por Hora</td>
+                <td>Guía básica para mejorar el branding. </td>
+            </tr>
+            <tr>
+              <td><strong>Redacción de calendario de contenidos.</strong></td>
+              <td><em>Planificación detallada de publicaciones para redes sociales.</em></td>
+              <td>Mensual</td>
+              <td>Una semana planificada.</td>
+          </tr>
+          <tr>
+            <td><strong>Atención al cliente en Redes Sociales.</strong></td>
+            <td><em>Gestión de comentarios y reseñas <br>(No incluye mensajes privados).</em></td>
+            <td>Mensual</td>
+            <td>Tips para dejar satisfechos a tus clientes.</td>
+        </tr>
+        <tr>
+          <td><strong>Creación de contenido audiovisual.</strong></td>
+          <td><em>Guías y/o Grabación, Edición y Publicación de <br>Videos, Reels, Short.</em></td>
+          <td>Por Proyecto y/o Mensual</td>
+          <td>Uno de Regalo.</td>
+      </tr>
+                <tr>
+                    <td><strong>Diseño de Redes Sociales</strong></td>
+                    <td><em>Feed: Paleta de colores, Diseño de destacadas, texto de presentación.</em></td>
+                    <td>Por proyecto</td>
+                    <td>Vinculación de enlaces.</td>
+                </tr> 
+                <tr>
+                    <td><strong>Optimización en Redes Sociales.</strong></td>
+                    <td><em>Mejora y ajuste de tus perfiles sociales.</em></td>
+                    <td>Por proyecto.</td>
+                    <td>Ideas de diseño.</td>
+                </tr>
+                <tr>
+                    <td><strong>Diseño en WhatsApp Business.</strong></td>
+                    <td><em>Diseño del perfil: Foto, portada, descripción, ubicación, vinculación con redes sociales; Diseño de catálogo.</em></td>
+                    <td>Por Proyecto.</td>
+                    <td>Guía para hacer publicidad.</td>
+                </tr>
+                <tr>
+                    <td><strong>Creación de Blog / Pagina web.</strong></td>
+                    <td><em>¿Querés potenciar aún más tu empresa?<br> Desarrollamos Blog y/o Páginas Web (Sin dominio).</em></td>
+                    <td>Por Proyecto</td>
+                    <td>Vinculación a Redes Sociales y WhatsApp.</td>
+                </tr>
+                <tr>
+                    <td><strong>Publicidad y Anuncios Ads.</strong></td>
+                    <td><em>Gestión de campañas publicitarias en línea de acuerdo al alcance deseado.</em></td>
+                    <td>Por campañas.</td>
+                    <td>Lista de Kayswords.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+  <!-- Grid -->
+  <br>
+  <div id="packs">
+    <div>
+        <h2>Packs disponibles</h2>
+    </div>
+    <br>
+    <div class="packs-carousel">
+        <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#9664;</button>
+        <div class="packs-container">
+          <div class="pack" data-aos="flip-left">
+            <h1>Standard</h1>
+                <ul class="animated-list">
+                    <li><span>&#127912;</span> Diseño para destacadas.</li>
+                    <li><span>&#127911;</span> Texto de presentación.</li>
+                    <li><span>&#128172;</span> Creación y programación.</li>
+                    <li><span>&#128240;</span> 8 Historias y 6 Posteos.</li>
+                    <li><span>&#127916;</span> Reels: 2</li>
+                    <li><span>&#128276;</span> Publicidad Ads: 1</li>
+                    <li><span>(Mensual)</span></li>
+                    <li>
+                        <hr class="separator">
+                        <a href="#contacto" class="btn">Solicitar Presupuesto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pack active">
+                <h1>Premium</h1>
+                <ul class="animated-list">
+                    <li><span>&#127912;</span> Diseño para destacadas.</li>
+                    <li><span>&#127911;</span> Texto de presentación.</li>
+                    <li><span>&#128172;</span> Creación y programación.</li>
+                    <li><span>&#128279;</span> Vinculación de redes sociales.</li>
+                    <li><span>&#127909;</span> Diseño de WhatsApp Business.</li>
+                    <li><span>&#128240;</span> 12 Historias y 9 Posteos.</li>
+                    <li><span>&#127916;</span> Reels: 4.</li>
+                    <li><span>&#127912;</span> Publicidad Ads: 2.</li>
+                    <li><span>(Mensual)</span></li>
+                    <li>
+                        <hr class="separator">
+                        <a href="#contacto" class="btn">Solicitar Presupuesto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pack" data-aos="flip-left">
+              <h1>Gold</h1>
+                <ul class="animated-list">
+                    <li><span>&#127912;</span> Diseño para destacadas.</li>
+                    <li><span>&#127911;</span> Texto de presentación.</li>
+                    <li><span>&#128279;</span> Vinculación de redes sociales.</li>
+                    <li><span>&#127912;</span> Diseño de WhatsApp Business.</li>
+                    <li><span>&#128172;</span> Creación, programación y publicación.</li>
+                    <li><span>&#127760;</span> Ubicación en Google Maps.</li>
+                    <li><span>&#128172;</span> Creación de Blog (Sin dominio).</li>
+                    <li><span>&#128240;</span> 20 Historias + 12 Posteos.</li>
+                    <li><span>&#127916;</span> Reels: 4</li>
+                    <li><span>&#128276;</span> Publicidad Ads: <strong>3.</strong></li>
+                    <li><span>(Mensual)</span></li>
+                    <li>
+                        <hr class="separator">
+                        <a href="#contacto" class="btn">Solicitar Presupuesto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="carousel-btn next" onclick="moveCarousel(1)">&#9654;</button>
+    </div>
+</div>
+
+<br>
+  <div class="team-container">
+        <div class="team-member">
+          <div class="team-member-info">
+          <h3><strong>¿Cómo trabajaremos juntos?</strong></h3>
+          <p>Nuestro compromiso comienza con un <strong>período trimestral,</strong> tiempo en el cual podemos realizar ajustes significativos que maximicen el impacto de tu marca. <br><br>
+            Después de este periodo, te ofrecemos flexibilidad con opciones mensuales adaptadas a tus necesidades cambiantes.
+          <br> 
+          <strong>Es importante</strong> destacar que en todas nuestras propuestas el cliente siempre tiene acceso a sus redes sociales e incluyen <br> 
+          <strong>Creación de marca, Branding e Identidad visual, ¡incluso la opción de actualizar tu logo!</strong><br><br> 
+          Esto se realiza una sola vez al inicio de tu contrato, garantizando una base sólida para una planificación efectiva y estrategias personalizadas que potencien tu presencia en las redes sociales.</p>
+      </div> </div>
+  </div>
+</div>
+    <br>
+    <!-- Grid -->
+    <div id="nosotras">
+      <div>
+          <h2>Nosotras</h2>
+      </div>
+      <div class="team-container">
+          <div class="team-member">
+              <img src="img\Cris.jpeg" alt="Cristela Evans Villamayor">
+              <div class="team-member-info">
+                  <h3><strong>Cristela Evans Villamayor</strong></h3>
+                  <p><strong>Community Manager</strong></p>
+                  <p>Líder creativa en estrategias digitales, es una mente en búsqueda de la próxima tendencia. Desde la creación de contenido cautivador hasta la gestión de conversaciones en línea. Su enfoque meticuloso y su habilidad para entender las necesidades de nuestra audiencia la convierten en una pieza fundamental para nuestro éxito.</p>
+              </div>
+          </div>
+          <div class="team-member">
+              <img src="img\Giu.jpeg" alt="Giuliana Pizarro">
+              <div class="team-member-info">
+                  <h3><strong>Giuliana Pizarro</strong></h3>
+                  <p><strong>Community Manager</strong></p>
+                  <p>Trae consigo una pasión innata para construir relaciones auténticas en línea. Su habilidad para identificar oportunidades de compromiso y generar conversaciones significativas ha sido fundamental para cultivar una comunidad vibrante en torno a nuestra marca.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <br>
+  <!-- Contact -->
+  <div id="contacto" class="contact-container">
+    <div class="map-container">
+        <h2>Ubicación</h2>
+        <div id="map"></div>
+        <div class="w3-xlarge w3-section">
+          <p>San Carlos de Bariloche, Rio Negro, Argentina<br>WhatsApp : (+54) 2944 209775<br>excelsacomunicacion@gmail.com</p>
+          <p class="social-title">Seguinos en Redes Sociales:</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61560480576626" class="w3-hover-opacity"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/excelsa.cg/" class="w3-hover-opacity"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://ar.pinterest.com/excelsacomunicacion/" class="w3-hover-opacity"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a> 
+            <a href="http://linkedin.com/company/excelsa-comunicación-cm" class="w3-hover-opacity"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <a href="https://www.tiktok.com/@excelsa.comunicacion" class="w3-hover-opacity">
+              <img src="img/Diseño sin título.png" alt="TikTok" style="width: 24px;">
+            </a>
+          </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/mdoqqozv" method="POST">
+          <div>
+              <label>Nombre</label>
+              <input type="text" name="Name" required>
+          </div>
+          <div>
+              <label>Email</label>
+              <input type="email" name="Email" required>
+          </div>
+          <div>
+              <label>Asunto</label>
+              <input type="text" name="Subject" required>
+          </div>
+          <div>
+              <label>Mensaje</label>
+              <textarea name="Message" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+      </form>
+    </div>
+</div>
+<br>
+<footer class="footer">
+  <p>© 2024 Excelsa Comunicación. Todos los derechos reservados.</p>
+</footer>
+<script src="scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

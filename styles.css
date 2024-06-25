@@ -1,0 +1,464 @@
+/* Variables globales */
+:root {
+  --primary-color: #FFA229;
+  --secondary-color: #FF634A;
+  --hover-color: #FE7A2E;
+  --text-color: #333;
+  --background-color: #f9f9f9;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Poppins', 'Poppins';
+  font-size: 18px;
+  color: var(--text-color);
+  background-image: url('img/Excelsa Comunicación.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  font-size: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-brand img {
+  max-width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius:25px;
+
+}
+
+.nav-brand img:hover {
+  transform: scale(1.05);
+}
+
+.nav-links a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+}
+
+/* Títulos */
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Poppins', 'Poppins';
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Sección de Servicios */
+.services-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #ffffff5e;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-heading {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.services-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  margin-top: 20px;
+}
+
+.services-table th,
+.services-table td {
+  padding: 15px;
+  text-align: center;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.services-table th {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.services-table tr {
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.services-table tr:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.services-table tr:nth-child(even) {
+  background-color: #eee7e7;
+}
+
+/* Sección de Packs */
+.packs-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 40px 20px;
+  background-color: #ffffff5e;
+}
+
+.packs-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.pack {
+  min-width: 300px;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  text-align: center;
+  margin: 0 10px;
+  flex: 0 0 auto;
+  opacity: 0.5;
+  transform: scale(0.8);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.pack:hover,
+.pack.active {
+  opacity: 1;
+  transform: translateY(-10px) scale(1.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.pack h1 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.pack ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.pack ul li {
+  margin: 10px 0;
+}
+
+.pack .btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.pack .btn:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.carousel-btn {
+  background-color: var(--primary-color);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* Sección Nosotras */
+#nosotras {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #ffffff5e;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 30px;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.team-member img {
+  max-width: 30%;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.team-member-info h3 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.team-member-info p {
+  font-size: 20px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Sección de Contacto */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 60px 20px;
+  background-color: #ffffff5e;
+}
+
+.map-container,
+.contact-form {
+  width: 45%;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.map-container p {
+  font-size: 1.5rem;
+}
+
+.contact-form h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form div {
+  margin-bottom: 15px;
+}
+
+.contact-form form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form form input[type="text"]:focus,
+.contact-form form input[type="email"]:focus,
+.contact-form form textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.contact-form form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contact-form form button[type="submit"] {
+  padding: 12px 25px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact-form form button[type="submit"]:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.social-title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  color: var(--primary-color);
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--hover-color);
+  transform: translateY(-3px);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  color: #FFF;
+  font-size: 16px;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar .nav-links a {
+    padding: 10px;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .packs-carousel {
+    flex-direction: column;
+  }
+
+  .packs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pack {
+    max-width: 90%;
+    margin: 10px 0;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .map-container,
+  .contact-form {
+    width: 100%;
+  }
+
+  .team-member {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-member img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
