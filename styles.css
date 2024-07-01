@@ -403,12 +403,78 @@ h2 {
 .footer {
   background-color: #ec1c64;
   padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left-side {
+  flex: 1;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.center-side {
+  flex: 1;
   text-align: center;
 }
 
-.footer p {
+.right-side {
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.footer p, .footer a {
   color: #FFF;
   font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.newsletter-form {
+  margin-top: 10px;
+}
+
+.newsletter-form label {
+  color: #FFF;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #FFF;
+  color: #ec1c64;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #ffdeeb;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  color: #FFF;
 }
 
 /* Media Queries */
