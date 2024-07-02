@@ -627,3 +627,31 @@ h2 {
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
   }
 }
+
+
+/* Estilos para el widget de chatbot */
+#chatbot-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#whatsapp-chat-btn {
+  background-color: #25D366;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#whatsapp-chat-btn i {
+  margin-right: 10px;
+}
+
+#whatsapp-chat-btn:hover {
+  background-color: #128C7E;
+}
