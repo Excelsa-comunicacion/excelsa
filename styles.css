@@ -632,27 +632,34 @@ h2 {
 /* Estilos para el widget de chatbot */
 #chatbot-widget {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 100px;
+  right: 40px;
   z-index: 1000;
 }
 
 #whatsapp-chat-btn {
   background-color: #25D366;
   color: #fff;
-  border: none;
-  padding: 10px 15px;
-  font-size: 40px;
-  cursor: pointer;
-  border-radius: 40px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  text-decoration: none; /* Para quitar la subraya que a veces aparece en los enlaces */
+  position: fixed;
+  bottom: 200px;
+  right: 40px;
+  z-index: 1000; 
+  border-radius: 1000%;
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: 100px; /* Ajusta el tamaño según tus necesidades */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border: none; /* Asegura que no haya bordes */
+  box-shadow: none; /* Elimina cualquier sombra */
+  overflow: hidden; 
 }
 
 #whatsapp-chat-btn i {
-  font-size: 100px;
+  font-size: 100px; /* Ajusta el tamaño según tus necesidades */
+  line-height: 0; 
 }
 
 #whatsapp-chat-btn:hover {
-  background-color: #128C7E;
+  background-color: #25D365;
 }
