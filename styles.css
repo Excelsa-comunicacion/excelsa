@@ -477,6 +477,16 @@ h2 {
   color: #FFF;
 }
 
+#thanks-message {
+  font-size: 20px;
+  color: #25D366;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #25D366;
+  border-radius: 8px;
+  background-color: #e0f7ea;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 /* Media Queries */
 @media (max-width: 768px) {
