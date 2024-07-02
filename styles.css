@@ -474,7 +474,7 @@ h2 {
   border: none;
   border-radius: 5px;
   width: 100%;
-  max-width: 50px; /* Limita el ancho máximo del input */
+  max-width: 80px; /* Limita el ancho máximo del input */
 }
 
 .newsletter-form button {
