@@ -104,3 +104,19 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
 }
+
+
+// JavaScript para abrir la ventana de chat de WhatsApp
+document.addEventListener('DOMContentLoaded', function() {
+  var whatsappBtn = document.getElementById('whatsapp-chat-btn');
+
+  if (whatsappBtn) {
+    whatsappBtn.addEventListener('click', function() {
+      // Reemplaza este número de teléfono con el número de WhatsApp al que quieres enviar mensajes
+      var phoneNumber = '+549123456789'; // Ejemplo de número de WhatsApp
+
+      // Abre una nueva ventana de chat de WhatsApp
+      window.open('https://wa.me/' + phoneNumber, '_blank');
+    });
+  }
+});
