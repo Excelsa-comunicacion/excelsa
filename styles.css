@@ -438,43 +438,45 @@ h2 {
   margin-top: 20px;
 }
 
+.center-side {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .newsletter-form {
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .newsletter-form label {
-  color: #FFF;
-  font-size: 16px;
-  display: block;
-  margin-bottom: 5px;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .newsletter-form input {
   padding: 10px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
 .newsletter-form button {
-  padding: 10px 20px;
-  background-color: #FFF;
-  color: #ec1c64;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #25D366;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .newsletter-form button:hover {
-  background-color: #ffdeeb;
-}
-
-.title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-left: 50px;
-  color: #FFF;
+  background-color: #1eb053;
 }
 
 /* Media Queries */
