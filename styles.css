@@ -641,16 +641,16 @@ h2 {
   background-color: #25D366;
   color: #fff;
   border: none;
-  padding: 15px 20px;
+  padding: 5px 5px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   text-decoration: none; /* Para quitar la subraya que a veces aparece en los enlaces */
 }
 
 #whatsapp-chat-btn i {
-  margin-right: 10px; /* Espacio entre el icono y el borde del botón */
+  margin-right: 1px; /* Espacio entre el icono y el borde del botón */
 }
 
 #whatsapp-chat-btn:hover {
