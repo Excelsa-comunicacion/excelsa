@@ -644,7 +644,7 @@ h2 {
   padding: 10px 15px;
   font-size: 40px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 40px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   text-decoration: none; /* Para quitar la subraya que a veces aparece en los enlaces */
 }
