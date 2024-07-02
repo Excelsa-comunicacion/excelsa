@@ -122,10 +122,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
 document.getElementById('newsletter-form').addEventListener('submit', function(event) {
   event.preventDefault();
   const email = document.getElementById('email').value;
-  alert(`Gracias por suscribirte con el email: ${email}`);
-  // Aquí puedes agregar el código para enviar el email a tu servidor
+  
+  if (email) {
+    const thanksMessage = document.getElementById('thanks-message');
+    thanksMessage.style.display = 'block';
+    thanksMessage.classList.add('animate__fadeIn');
+    document.getElementById('newsletter-form').style.display = 'none';
+  }
 });
