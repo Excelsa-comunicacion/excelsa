@@ -438,9 +438,20 @@ h2 {
   margin-top: 20px;
 }
 
-.newsletter-form {
-  margin-top: 10px;
+
+.center-side {
+  background-color: #ec1c64;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+.newsletter-form {
+   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .newsletter-form label {
@@ -451,10 +462,12 @@ h2 {
 }
 
 .newsletter-form input {
-  padding: 10px;
-  margin-right: 10px;
+ padding: 10px;
+  margin-bottom: 10px;
   border: none;
   border-radius: 5px;
+  width: 100%;
+  max-width: 300px; /* Limita el ancho máximo del input */
 }
 
 .newsletter-form button {
@@ -474,7 +487,6 @@ h2 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  margin-left: 50px;
   color: #FFF;
 }
 
