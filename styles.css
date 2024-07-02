@@ -433,6 +433,12 @@ h2 {
   margin-top: 20px;
 }
 
+.left-side {
+  flex: 1;
+  text-align: center;
+  margin-left: 20px;
+}
+
 
 .center-side {
   background-color: #ec1c64;
