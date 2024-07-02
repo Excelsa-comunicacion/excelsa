@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var phoneNumber = '+5492944209775'; // Ejemplo de número de WhatsApp
 
       // Abre una nueva ventana de chat de WhatsApp
-      window.open('https://wa.me/' + +5492944209775, '_blank');
+      window.open('https://wa.me/' +5492944209775, '_blank');
     });
   }
 });
