@@ -646,12 +646,13 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none; /* Para quitar la subraya que a veces aparece en los enlaces */
 }
 
 #whatsapp-chat-btn i {
-  margin-right: 10px;
+  margin-right: 10px; /* Espacio entre el icono y el borde del botón */
 }
 
 #whatsapp-chat-btn:hover {
   background-color: #128C7E;
-} 
+}
