@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (whatsappBtn) {
     whatsappBtn.addEventListener('click', function() {
       // Reemplaza este número de teléfono con el número de WhatsApp al que quieres enviar mensajes
-      var phoneNumber = '+549123456789'; // Ejemplo de número de WhatsApp
+      var phoneNumber = '+5492944209775'; // Ejemplo de número de WhatsApp
 
       // Abre una nueva ventana de chat de WhatsApp
       window.open('https://wa.me/' + phoneNumber, '_blank');
