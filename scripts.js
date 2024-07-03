@@ -140,24 +140,30 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
 
 const prevBtn = document.querySelector('.carousel-btn.prev');
 const nextBtn = document.querySelector('.carousel-btn.next');
-const packsContainer = document.querySelector('.packs-container');
+const packs = document.querySelectorAll('.pack');
 let currentIndex = 0;
 
+function updateCarousel() {
+  packs.forEach((pack, index) => {
+    pack.classList.remove('prev', 'active', 'next');
+    if (index === currentIndex) {
+      pack.classList.add('active');
+    } else if (index === (currentIndex - 1 + packs.length) % packs.length) {
+      pack.classList.add('prev');
+    } else if (index === (currentIndex + 1) % packs.length) {
+      pack.classList.add('next');
+    }
+  });
+}
+
 prevBtn.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateCarousel();
-  }
+  currentIndex = (currentIndex - 1 + packs.length) % packs.length;
+  updateCarousel();
 });
 
 nextBtn.addEventListener('click', () => {
-  if (currentIndex < packsContainer.children.length - 1) {
-    currentIndex++;
-    updateCarousel();
-  }
+  currentIndex = (currentIndex + 1) % packs.length;
+  updateCarousel();
 });
 
-function updateCarousel() {
-  const packWidth = packsContainer.children[0].offsetWidth;
-  packsContainer.style.transform = `translateX(-${currentIndex * (packWidth + 20)}px)`;
-}
+updateCarousel(); // Inicializar el carrusel
