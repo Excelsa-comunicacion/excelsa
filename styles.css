@@ -674,21 +674,21 @@ h2 {
   position: fixed;
   bottom: 200px;
   right: 40px;
-  z-index: 1000; 
-  border-radius: 1000%;
+  z-index: 1000;
+  border-radius: 50%; /* Cambiar a 50% para que sea un círculo */
   width: 100px; /* Ajusta el tamaño según tus necesidades */
   height: 100px; /* Ajusta el tamaño según tus necesidades */
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border: none; /* Asegura que no haya bordes */
   box-shadow: none; /* Elimina cualquier sombra */
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-#whatsapp-chat-btn i {
-  font-size: 100px; /* Ajusta el tamaño según tus necesidades */
-  line-height: 0; 
+#whatsapp-chat-btn .chat-img {
+  width: 80%; /* Ajusta el tamaño según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
 }
 
 #whatsapp-chat-btn:hover {
