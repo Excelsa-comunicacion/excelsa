@@ -670,13 +670,10 @@ h2 {
 }
 
 #whatsapp-chat-btn {
-  background-color: #25D366;
-  color: #fff;
   position: fixed;
   bottom: 200px;
   right: 40px;
   z-index: 1000;
-  border-radius: 50%; /* Cambiar a 50% para que sea un círculo */
   width: 100px; /* Ajusta el tamaño según tus necesidades */
   height: 100px; /* Ajusta el tamaño según tus necesidades */
   display: flex;
@@ -688,7 +685,7 @@ h2 {
 }
 
 #whatsapp-chat-btn .chat-img {
-  width: 100%; /* Ajusta el tamaño según tus necesidades */
+  width: 120%; /* Ajusta el tamaño según tus necesidades */
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
