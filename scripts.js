@@ -133,3 +133,31 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
     document.getElementById('newsletter-form').style.display = 'none';
   }
 });
+
+
+
+
+
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+const packsContainer = document.querySelector('.packs-container');
+let currentIndex = 0;
+
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
+  }
+});
+
+nextBtn.addEventListener('click', () => {
+  if (currentIndex < packsContainer.children.length - 1) {
+    currentIndex++;
+    updateCarousel();
+  }
+});
+
+function updateCarousel() {
+  const packWidth = packsContainer.children[0].offsetWidth;
+  packsContainer.style.transform = `translateX(-${currentIndex * (packWidth + 20)}px)`;
+}
