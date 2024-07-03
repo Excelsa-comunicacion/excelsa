@@ -755,4 +755,6 @@ body {
   border-radius: 2px;
 }
 
-
+.terms-conditions p {
+  text-align: justify;
+}
