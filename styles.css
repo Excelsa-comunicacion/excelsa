@@ -662,12 +662,7 @@ h2 {
 
 /* Estilos para el widget de chatbot */
 /* Estilos para el widget de chatbot */
-#chatbot-widget {
-  position: fixed;
-  bottom: 100px;
-  right: 40px;
-  z-index: 1000;
-}
+
 
 #whatsapp-chat-btn {
   position: fixed;
