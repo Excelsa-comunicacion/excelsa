@@ -109,28 +109,27 @@ h2 {
 
 .services-content video {
   width: 100%;
-  max-width: 800px;
+  max-width: 800px; /* Ajustamos al ancho máximo del video */
   height: auto;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   pointer-events: none; /* Desactiva los eventos de clic en el video */
 }
 
-
 /* Sección de Packs */
 /* Sección de Packs */
 .packs-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 100px 40px;
-    background-color: #ec1c65;
-    border-radius: 15px;
-    font-family: 'Poppins', sans-serif; /* Fuente Poppins */
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 800px; /* Ajustamos al ancho máximo del video */
+  margin: 0 auto;
+  padding: 100px 0; /* Ajustamos el padding según sea necesario */
+  background-color: #ec1c65; /* Color de fondo de Packs */
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif; /* Fuente Poppins */
+}
   
   .packs-container {
     display: flex;
