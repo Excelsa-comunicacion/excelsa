@@ -13,7 +13,7 @@ body {
   font-family: 'Poppins', 'Poppins';
   font-size: 18px;
   color: var(--text-color);
-  background-image: url('img/Excelsa Comunicación.png');
+  background-image: url('Excelsa Comunicación.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -109,7 +109,7 @@ h2 {
 
 .services-content video {
   width: 100%;
-  max-width: 800px; /* Ajustamos al ancho máximo del video */
+  max-width: 950px; /* Ajustamos al ancho máximo del video */
   height: auto;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   pointer-events: none; /* Desactiva los eventos de clic en el video */
@@ -123,7 +123,7 @@ h2 {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  max-width: 800px; /* Ajustamos al ancho máximo del video */
+  max-width: 900px; /* Ajustamos al ancho máximo del video */
   margin: 0 auto;
   padding: 100px 0; /* Ajustamos el padding según sea necesario */
   background-color: #ec1c65; /* Color de fondo de Packs */
