@@ -688,7 +688,6 @@ h2 {
   z-index: 1000;
   width: 100px; /* Ajusta el tamaño según tus necesidades */
   height: 100px; /* Ajusta el tamaño según tus necesidades */
-  border-radius: 200%; /* Cambiar a 50% para que sea un círculo */
   display: flex;
   align-items: center;
   justify-content: center;
