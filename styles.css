@@ -78,19 +78,18 @@ h2 {
 }
 
 /* Sección de Servicios */
-  .services-container {
-    max-width: 2050px;
+ .services-container {
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     padding: 50px 0;
     background-color: #ffffff5e;
-
-
-
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   }
 
   .services-list {
-    padding: 100px;
+    padding: 30px;
   }
 
   .services-list h2 {
@@ -100,14 +99,8 @@ h2 {
   }
 
   .services-list ul {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 30px;
+    list-style-type: none;
+    padding: 0;
   }
 
   .services-list li {
@@ -119,8 +112,6 @@ h2 {
   .services-list li:last-child {
     margin-bottom: 0;
   }
-
-
 
 
 
