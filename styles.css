@@ -111,7 +111,7 @@ h2 {
 }
 
 .services-list li {
-  font-size: 24px;
+  font-size: 20px;
   color: var(--text-color);
   margin-bottom: 15px;
 }
@@ -122,11 +122,11 @@ h2 {
 
 .services-gif {
   flex: 0 0 auto;
-  margin-left: 30px;
+  margin-left: 60px;
 }
 
 .services-gif img {
-  max-width: 230px; /* Ajusta el tamaño del GIF según sea necesario */
+  max-width: 200px; /* Ajusta el tamaño del GIF según sea necesario */
   height: auto;
   border-radius: 10px; /* Bordes redondeados opcionales */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra opcional */
