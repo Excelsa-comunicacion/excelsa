@@ -78,7 +78,36 @@ h2 {
 }
 
 /* Sección de Servicios */
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Opcional: ajusta la altura según tu diseño */
+}
 
+.services-list {
+    text-align: center;
+    max-width: 600px; /* Ajusta el ancho máximo según tus necesidades */
+    padding: 20px;
+    background-color: #f0f0f0; /* Color de fondo opcional */
+    border-radius: 8px; /* Bordes redondeados opcional */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.services-list h1 {
+    font-size: 24px; /* Tamaño de fuente del título */
+    margin-bottom: 15px; /* Espaciado inferior opcional */
+}
+
+.services-list ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+}
+
+.services-list li {
+    font-size: 16px; /* Tamaño de fuente de los elementos de la lista */
+    margin-bottom: 8px; /* Espaciado inferior entre elementos */
+}
 
 
 
