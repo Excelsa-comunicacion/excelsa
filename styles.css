@@ -686,7 +686,7 @@ h2 {
 
 #whatsapp-chat-btn {
   position: fixed;
-  bottom: 100px;
+  bottom: 20px;
   right: 40px;
   z-index: 1000;
   width: 100px; /* Ajusta el tamaño según tus necesidades */
