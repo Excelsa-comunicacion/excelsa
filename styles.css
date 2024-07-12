@@ -82,12 +82,12 @@ services-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Ajusta la altura mínima según necesites */
+    min-height: 300vh; /* Ajusta la altura mínima según necesites */
 }
 
 .services-list {
     text-align: center;
-    max-width: 600px; /* Ancho máximo del contenedor */
+    max-width: 1000px; /* Ancho máximo del contenedor */
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
