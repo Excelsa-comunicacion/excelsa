@@ -81,47 +81,94 @@ h2 {
 
 
 /* Sección de Servicios */
-/* Sección de Servicios */
-.services-section {
-  text-align: center;
-  padding: 50px 0;
-  background-color: #ffffff5e;
+.services-container .colors {
+  --color1: #2E86AB; /* Azul oscuro */
+  --color2: #F7C6C7; /* Rosa claro */
+  --color3: #6A0572; /* Morado oscuro */
+  --color4: #F79D84; /* Naranja claro */
+  --color5: #FFD700; /* Amarillo dorado */
+  --color6: #FF5733; /* Rojo anaranjado */
+  --color7: #05C7F2; /* Azul claro */
+  --text-color: #333; /* Color de texto */
 }
-
 .services-container {
-  max-width: 1200px;
-  margin: 0 auto; /* Centrará el contenedor horizontalmente */
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  padding: 20px;
+  text-align: center; /* Alineación de texto central */
 }
 
-.services-heading {
-  position: relative;
-  margin-bottom: 40px;
+.services-list {
+  max-width: 300px; /* Reducir el ancho máximo de la lista */
+  margin-bottom: 10px; /* Espacio inferior entre la lista y el GIF */
 }
 
-.services-heading::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 4px;
-  background-color: #ffffff;
+h1 {
+  color: var(--color4);
+  margin-bottom: 20px;
 }
 
-.services-content {
-  margin-top: 20px;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.services-content video {
-  width: 100%;
-  max-width: 950px; /* Ajustamos al ancho máximo del video */
+li {
+  background: var(--color2);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  color: #090909;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gif-container {
+  max-width: 100%;
+  margin-top: 10px; /* Ajustar espacio arriba del GIF */
+  margin-bottom: 10px; /* Ajustar espacio abajo del GIF */
+  text-align: center; /* Alineación del GIF al centro */
+}
+
+.gif-container img {
+  max-width: 200px; /* Reducir el tamaño máximo del GIF */
   height: auto;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  pointer-events: none; /* Desactiva los eventos de clic en el video */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
+.gif-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Ajuste para centralizar todo el contenido */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .services-container {
+      flex-direction: row;
+      align-items: center; /* Centrar horizontalmente */
+      justify-content: center; /* Centrar verticalmente */
+  }
+
+  .services-list, .gif-container {
+      flex: 1;
+      margin: 10px; /* Espacio entre la lista y el GIF */
+  }
+}
 
 
 
