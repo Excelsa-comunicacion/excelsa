@@ -78,40 +78,59 @@ h2 {
 }
 
 /* Sección de Servicios */
- .services-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 50px 0;
-    background-color: #ffffff5e;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  }
+/* Estilo para Sección de Servicios */
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #ffffff5e;
+}
 
-  .services-list {
-    padding: 30px;
-  }
+.services-container h2 {
+  font-size: 36px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
 
-  .services-list h2 {
-    font-size: 36px;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-  }
+.services-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 30px;
+}
 
-  .services-list ul {
-    list-style-type: none;
-    padding: 0;
-  }
+.services-list {
+  flex: 1;
+  text-align: left;
+}
 
-  .services-list li {
-    font-size: 24px;
-    color: var(--text-color);
-    margin-bottom: 15px;
-  }
+.services-list ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  .services-list li:last-child {
-    margin-bottom: 0;
-  }
+.services-list li {
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.services-list li:last-child {
+  margin-bottom: 0;
+}
+
+.services-gif {
+  flex: 0 0 auto;
+  margin-left: 30px;
+}
+
+.services-gif img {
+  max-width: 300px; /* Ajusta el tamaño del GIF según sea necesario */
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados opcionales */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
 
 
 
