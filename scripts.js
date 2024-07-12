@@ -129,6 +129,27 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const services = document.querySelectorAll('.services-list li');
+    
+    services.forEach((service, index) => {
+        service.style.animation = `fadeIn 0.5s ease forwards ${index / 5}s`;
+    });
+});
 
+// CSS Keyframes para la animación fadeIn
+const styleSheet = document.styleSheets[0];
+
+styleSheet.insertRule(`
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}`, styleSheet.cssRules.length);
 
 
