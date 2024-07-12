@@ -93,8 +93,8 @@ h2 {
 }
 
 h1 {
-    color: var(--color1);
-    margin-bottom: 20px;
+    color: black;
+    margin-bottom: 60px;
 }
 
 ul {
