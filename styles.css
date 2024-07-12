@@ -82,45 +82,6 @@ h2 {
 
 /* Sección de Servicios */
 /* Sección de Servicios */
-.services-section {
-  text-align: center;
-  padding: 50px 0;
-  background-color: #ffffff5e;
-}
-
-.services-container {
-  max-width: 1200px;
-  margin: 0 auto; /* Centrará el contenedor horizontalmente */
-  text-align: center;
-}
-
-.services-heading {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.services-heading::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 4px;
-  background-color: #ffffff;
-}
-
-.services-content {
-  margin-top: 20px;
-}
-
-.services-content video {
-  width: 100%;
-  max-width: 950px; /* Ajustamos al ancho máximo del video */
-  height: auto;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  pointer-events: none; /* Desactiva los eventos de clic en el video */
-}
 
 
 
