@@ -79,11 +79,11 @@ h2 {
 
 /* Sección de Servicios */
   .services-container {
-    max-width: 2050px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 50px 0;
-    background-color: #ffffff5e;
+   display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 60px 20px;
+  background-color: #ffffff5e;
 
   }
 
