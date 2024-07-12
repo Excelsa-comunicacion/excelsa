@@ -61,7 +61,10 @@ body {
   background-color: var(--hover-color);
   transform: translateY(-2px);
 }
-
+/* Slideshow */
+.mySlides {
+  display: none;
+}
 
 /* Títulos */
 h2 {
