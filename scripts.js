@@ -28,18 +28,10 @@ function showDivs() {
   setTimeout(showDivs, 4000);
 }
 
-function plusDivs(n) {
-  slideIndex += n;
-  if (slideIndex > x.length) {slideIndex = 1;}
-  if (slideIndex < 1) {slideIndex = x.length;}
-  showDivs();
-}
-
 function currentDiv(n) {
   slideIndex = n;
   showDivs();
 }
-
 
 
 
