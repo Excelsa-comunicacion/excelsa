@@ -1,20 +1,10 @@
-//SLIDESHOW//
+var slideIndex = 0;
+showDivs();
 
-/**
- * Muestra la diapositiva seleccionada en la slideshow
- * @param {number} n Índice de la diapositiva a mostrar
- */
-function showDivs(n) {
+function showDivs() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demodots");
-  
-  // Ajustar índice fuera de rango
-  if (n > x.length) {
-    slideIndex = 1;
-  } else if (n < 1) {
-    slideIndex = x.length;
-  }
   
   // Ocultar todas las diapositivas
   for (i = 0; i < x.length; i++) {
@@ -26,30 +16,29 @@ function showDivs(n) {
     dots[i].className = dots[i].className.replace(" w3-white", "");
   }
   
-  // Mostrar la diapositiva seleccionada
+  // Ajustar índice y mostrar la diapositiva seleccionada
+  slideIndex++;
+  if (slideIndex > x.length) {
+    slideIndex = 1;
+  }
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
+  
+  // Cambiar diapositiva cada 4 segundos
+  setTimeout(showDivs, 4000);
 }
 
-/**
- * Avanza o retrocede la slideshow en n diapositivas
- * @param {number} n Número de diapositivas a avanzar o retroceder
- */
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+  slideIndex += n;
+  if (slideIndex > x.length) {slideIndex = 1;}
+  if (slideIndex < 1) {slideIndex = x.length;}
+  showDivs();
 }
 
-/**
- * Muestra la diapositiva específica
- * @param {number} n Índice de la diapositiva a mostrar
- */
 function currentDiv(n) {
-  showDivs(slideIndex = n);
+  slideIndex = n;
+  showDivs();
 }
-
-// Inicializar slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
 
 
 
@@ -73,36 +62,6 @@ function initMap() {
       position: location,
       map: map
   });
-}
-
-
-
-/*Slide*/
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demodots");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
 }
 
 
