@@ -126,7 +126,7 @@ h2 {
 }
 
 .services-gif img {
-  max-width: 150px; /* Ajusta el tamaño del GIF según sea necesario */
+  max-width: 90px; /* Ajusta el tamaño del GIF según sea necesario */
   height: auto;
   border-radius: 10px; /* Bordes redondeados opcionales */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra opcional */
