@@ -101,6 +101,7 @@ h2 {
   .services-list ul {
     list-style-type: none;
     padding: 0;
+    background-color: #ffffff;
   }
 
   .services-list li {
