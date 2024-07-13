@@ -103,15 +103,18 @@ h2 {
   position: absolute; /* Se posiciona el video en modo absoluto */
   top: 0;
   left: 0;
-  width: 150%;
-  height: 150%;
+  width: 100%;
+  height: 100%;
   /* Se establece el ancho y alto al 100% */
   background-color: #ffffff; /* Se agrega color de fondo blanco */
 }
 
 .services-video video {
   object-fit: cover; /* Ajusta el video para cubrir todo el fondo */
+  width: 100%;
+  height: 100%;
 }
+
 
 
 /* Sección de Packs */
