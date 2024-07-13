@@ -79,7 +79,6 @@ h2 {
 
 /* Sección de Servicios */
 /* Estilo para Sección de Servicios */
-/* Estilo para Sección de Servicios */
 .services-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -101,19 +100,20 @@ h2 {
 
 .services-video {
   position: absolute; /* Se posiciona el video en modo absoluto */
-  top: 0;
+  top: 50%; /* Posiciona el video en la mitad vertical */
   left: 0;
-  width: 150%;
-  height: 150%;
-  /* Se establece el ancho y alto al 100% */
+  width: 130%; /* Reduce el ancho al 130% */
+  height: 130%; /* Reduce el alto al 130% */
   background-color: #ffffff; /* Se agrega color de fondo blanco */
+  transform: translateY(-50%); /* Compensa la mitad del alto del video */
 }
 
 .services-video video {
-  object-fit: cover; /* Ajusta el video para cubrir todo el fondo */
-  width: 150%;
-  height: 150%;
+  object-fit: contain; /* Muestra el video completo dentro del contenedor */
+  width: 100%;
+  height: 100%;
 }
+
 
 
 /* Sección de Packs */
