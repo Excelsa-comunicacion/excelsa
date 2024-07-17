@@ -701,9 +701,8 @@ h2 {
   bottom: 20px;
   right: 40px;
   z-index: 1000;
-  width: 100px; /* Ajusta el tamaño según tus necesidades */
-  height: 100px; /* Ajusta el tamaño según tus necesidades */
-  border-radius: 200%; /* Cambiar a 50% para que sea un círculo */
+  width: 80px; /* Ajusta el tamaño según tus necesidades */
+  height: 80px; /* Ajusta el tamaño según tus necesidades */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -716,6 +715,7 @@ h2 {
   width: 120%; /* Ajusta el tamaño según tus necesidades */
   height: auto; /* Mantiene la proporción de la imagen */
 }
+
 
 
 
