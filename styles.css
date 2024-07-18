@@ -95,7 +95,7 @@ h2 {
 
 .servicio {
   width: 180px;
-  background-color: #Fe7b34;
+  background-color: #ffffff5e;
   border-radius: 50px;
   text-align: center;
   padding: 30px;
@@ -121,8 +121,8 @@ h2 {
 }
 
 .servicio h3 {
-  font-family: 'Quastral', sans-serif;
-  color: #f0ebec;
+  font-family: 'poppins', sans-serif;
+  color: #Fb5b5a; 
   font-size: 1.2rem;
   margin: 0;
   margin-top: 5px; /* Añadir espacio adicional en la parte superior del título */
