@@ -109,8 +109,8 @@ h2 {
 
 .servicio .icono {
   margin-bottom: 20px; /* Espacio opcional para separar el icono del título */
-  width: 90px; /* Ajusta el ancho del icono según necesites */
-  height: 90px; /* Ajusta el alto del icono según necesites */
+  width: 100px; /* Ajusta el ancho del icono según necesites */
+  height: 100px; /* Ajusta el alto del icono según necesites */
   display: block; /* Asegura que el icono se muestre como un bloque */
   margin: 0 auto; /* Centra el icono horizontalmente */
 }
@@ -125,7 +125,7 @@ h2 {
   color: #f0ebec;
   font-size: 1.2rem;
   margin: 0;
-  margin-top: 10px; /* Añadir espacio adicional en la parte superior del título */
+  margin-top: 5px; /* Añadir espacio adicional en la parte superior del título */
 }
 
 /* Estilos adicionales para cada servicio */
