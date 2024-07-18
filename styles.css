@@ -85,47 +85,57 @@ h2 {
 
 
 /* Sección de Servicios */
-/* Sección de Servicios */
-.services-container {
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.servicio {
+  width: 180px;
+  background-color: #Fe7b34;
+  border-radius: 50px;
   text-align: center;
-  padding: 2rem 1rem;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 1200px; /* Ajustamos al ancho máximo del video */
-  align-items: center;
-  margin: 0 auto; /* Centrará el contenedor horizontalmente */
-
+  padding: 30px;
+  overflow: hidden; /* Evita que los iconos grandes sobresalgan del recuadro */
+  transition: box-shadow 0.3s, opacity 0.3s; /* Añadir transición para el efecto hover */
+}
+.servicio:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el puntero */
+  opacity: 0.9; /* Ligero cambio de opacidad */
 }
 
-.services-container h2 {
-  color: #FFA229;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+.servicio .icono {
+  margin-bottom: 20px; /* Espacio opcional para separar el icono del título */
+  width: 90px; /* Ajusta el ancho del icono según necesites */
+  height: 90px; /* Ajusta el alto del icono según necesites */
+  display: block; /* Asegura que el icono se muestre como un bloque */
+  margin: 0 auto; /* Centra el icono horizontalmente */
 }
 
-.services-list ul {
-  list-style: none;
-  padding: 0;
+.servicio .icono img {
+  width: 90px; /* Ajusta el ancho de la imagen según necesites */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.servicio h3 {
+  font-family: 'Quastral', sans-serif;
+  color: #f0ebec;
+  font-size: 1.2rem;
   margin: 0;
+  margin-top: 10px; /* Añadir espacio adicional en la parte superior del título */
 }
 
-.services-list ul li {
-  font-size: 1.1rem;
-  color: #333;
-  padding: 0.5rem 0;
-  transition: all 0.3s ease;
+/* Estilos adicionales para cada servicio */
+
+.servicio:nth-child(3n+1) {
+  background-color: #Fe6b5b;
 }
 
-.services-list ul li:hover {
-  color: #FF634A;
-  transform: scale(1.05);
-}
-
-.services-list ul li:before {
-  content: "✔️";
-  margin-right: 0.5rem;
-  color: #FFA229;
+.servicio:nth-child(3n+2) {
+  background-color: #Fe4784;
 }
 
 
