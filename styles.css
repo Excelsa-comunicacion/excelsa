@@ -817,7 +817,7 @@ body {
 .motivational-message {
     backgraund-color: #ffffff5e;
     color: black; /* Color del texto */
-    text-align: center;
+    text-align: justify;
     font-family: poppins;
     padding: 20px;
     margin: 50px auto;
