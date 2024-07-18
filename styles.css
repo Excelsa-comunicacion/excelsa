@@ -813,23 +813,6 @@ body {
     color: #fe4784;
 }
 
-/* Estilo para el contenedor de la frase motivadora */
-.motivational-message {
-    backgraund-color: #ffffff5e;
-    color: black; /* Color del texto */
-    text-align: center;
-    font-family: poppins;
-    padding: 20px;
-    margin: 50px auto;
-    border-radius: 8px;
-    max-width: 600px; /* Ajusta el ancho máximo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.motivational-message p {
-    font-size: 1.5rem;
-    margin: 0;
-}
 
 
 /* Contenedor para los iconos de las banderas */
