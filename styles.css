@@ -815,9 +815,9 @@ body {
 
 /* Estilo para el contenedor de la frase motivadora */
 .motivational-message {
-    background-color: #Fe4784; /* Color de fondo */
-    color: white; /* Color del texto */
+    color: black; /* Color del texto */
     text-align: center;
+    font-family: poppins;
     padding: 20px;
     margin: 50px auto;
     border-radius: 8px;
@@ -828,4 +828,24 @@ body {
 .motivational-message p {
     font-size: 1.5rem;
     margin: 0;
+}
+
+
+/* Contenedor para los iconos de las banderas */
+.flag-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilo para los iconos de las banderas */
+.flag-icon {
+    width: 40px; /* Tamaño de los iconos */
+    height: 30px; /* Tamaño de los iconos */
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.flag-icon:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del icono al pasar el ratón */
 }
