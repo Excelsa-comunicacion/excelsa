@@ -128,15 +128,7 @@ h2 {
   margin-top: 5px; /* Añadir espacio adicional en la parte superior del título */
 }
 
-/* Estilos adicionales para cada servicio */
 
-.servicio:nth-child(3n+1) {
-  background-color: #Fe6b5b;
-}
-
-.servicio:nth-child(3n+2) {
-  background-color: #Fe4784;
-}
 
 
 
